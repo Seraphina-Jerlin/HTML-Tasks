@@ -1,0 +1,46 @@
+<html>
+<body bgcolor="orange">
+<h2><center><font color="maroon">Food Order Form</font></center></h2>
+<form onsubmit="showMessage(); return false;"> <center>
+
+Name:<input type="text"><br><br>
+
+Email:<input type="email"><br><br>
+
+Phone:<input type="number"><br><br>
+
+Select Food:
+<select>
+<option>Pizza</option>
+<option>Burger</option>
+<option>Biryani</option>
+<option>Chinese</option>
+</select>
+
+<br><br>
+
+Quantity:<input type="number"><br><br>
+
+Address:<br><textarea rows="4" cols="30"></textarea><br><br>
+
+Payment Method:<br>
+<input type="radio" name="pay">Cash On Delivery
+<input type="radio" name="pay">UPI
+<input type="radio" name="pay">Card
+<br><br>
+
+<input type="submit" value="Order Now">
+<input type="reset" value="Clear">
+
+</form>
+</center>
+<script>
+
+function showMessage()
+{
+    alert("Your order has been placed successfully! Thank you for ordering.");
+}
+
+</script>
+</body>
+</html>
